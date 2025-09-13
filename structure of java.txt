@@ -1,0 +1,43 @@
+Class
+A class is a blueprint or template for creating objects. It defines data (variables) and behaviors (methods) that objects created from the class will have.
+
+Every Java program must have at least one class. The class groups related code together.
+
+When you write public class ClassName { ... }, you are defining a new class named ClassName that is accessible from other parts of the program or other programs if declared public.
+
+main Method
+The main method is the entry point of any Java application. It's where the program starts executing.
+
+Signature: public static void main(String[] args)
+
+public: means this method is accessible from anywhere.
+
+static: means the method belongs to the class, not to instances (objects). It can be called without creating objects.
+
+void: means this method does not return any value.
+
+main: is the method name fixed by the JVM to start your program.
+
+String[] args: parameter to receive command-line arguments as an array of strings.
+
+Keywords Explained
+static: Used for methods and variables that belong to the class rather than an instance of the class. This allows calling main without creating an object.
+
+void: Specifies that the method returns no value.
+
+public: Access modifier meaning the method or class is accessible from anywhere in the program.
+
+System.out.println
+System is a predefined class provided by Java.
+
+out is a static object of the PrintStream class inside System that handles output to the console.
+
+println is a method of PrintStream that prints text to the console with a newline afterward. Combined, System.out.println() is used to print output to the screen.
+
+Putting it together: Example
+java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
