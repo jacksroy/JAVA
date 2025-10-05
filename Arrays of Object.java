@@ -21,8 +21,14 @@ public class Arrayofobj {
         Student arr[]= new Student[2];//here 2 is no.of objects   //step3 now create array to object 
         arr[0]=obj;//step 4 now assign object to array
         arr[1]=obj2;
+        System.out.println("Printing array using for loop");
         for(int i=0;i<arr.length;i++){//step 5 print the values
             System.out.println("Id of student:"+arr[i].id+" Name of student:"+arr[i].name+" Department of Student:"+arr[i].Dept);
+        }
+        System.out.println("-------------------------------------------------");
+        System.out.println("Printing array using for each loop");
+        for(Student i:arr){
+             System.out.println("Id of student:"+i.id+" Name of student:"+i.name+" Department of Student:"+i.Dept);
         }
     }
 }
@@ -33,5 +39,10 @@ public class Arrayofobj {
 // Name of student 2:Rinku
 // -------------------------------------------------
 // Now initializing object into array
+// Printing array using for loop
+// Id of student:101 Name of student:Ram Department of Student:CSE
+// Id of student:102 Name of student:Rinku Department of Student:AI
+// -------------------------------------------------
+// Printing array using for each loop
 // Id of student:101 Name of student:Ram Department of Student:CSE
 // Id of student:102 Name of student:Rinku Department of Student:AI
