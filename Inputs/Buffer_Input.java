@@ -7,6 +7,12 @@ public class Buffer_Input {
         System.out.println(" Taking input from user using buffer reader");
 
         InputStreamReader in = new InputStreamReader(System.in); // here in is object of inputstreamreader class  
+        // BufferedReader br = new BufferedReader( new InputStreamReader(System.in)); 
+        // This is another way to create object of bufferedreader class
+        
+        
+        
+        // here br is object of bufferedreader class and we need
         BufferedReader br =new BufferedReader(in); // here br is object of bufferedreader class and we need to pass object of inputstreamreader class as parameter
 
         String name = br.readLine(); // readLine() method is used to take string input from user
