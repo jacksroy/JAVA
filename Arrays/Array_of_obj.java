@@ -1,7 +1,11 @@
 class Student{//step 1 create a class and declare some values
+    public Student(int i, String string, int j) {
+        //TODO Auto-generated constructor stub
+    }
     int id;
     String name;
     String Dept;
+    public int marks;
 }
 
 public class Array_of_obj {
